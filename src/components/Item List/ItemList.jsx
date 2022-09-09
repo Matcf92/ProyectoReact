@@ -1,4 +1,4 @@
-import "./ItemList.css"
+/**import "./ItemList.css"
 
 const ItemList = ({ productos = [] }) => {
 
@@ -24,20 +24,17 @@ const ItemList = ({ productos = [] }) => {
     )
 }
 
-export default ItemList
+export default ItemList**/
 
 
-
-/**import Item from "../Item/Item"
+import "./ItemList.css"
+import Item from "../Item/Item"
 
 
 const ItemList = ( {productos = []} ) => {
 
     return (
-        <div className="container my-5">
-            <h2>Productos</h2>
-            <hr/>
-
+        <div className="Container">
             { productos.map((prod) => <Item producto={prod} key={prod.id}/>)}
         </div>
     )
@@ -45,7 +42,7 @@ const ItemList = ( {productos = []} ) => {
 
 export default ItemList
 
-import "./ItemList.css"
+/**import "./ItemList.css"
 import Item from "../Item/Item"
 
 const ItemList = ({ productos = [] }) => {
