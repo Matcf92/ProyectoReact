@@ -5,7 +5,7 @@ const ItemDetail = ({ item }) => {
 
     return (
         <div className="cardDetailContainer">
-            <img src={item.imagen} alt="No carga no" />
+            <img className="detailImg" src={item.imagen} alt="No carga no" />
             <h3>{item.nombre}</h3>
             <p>{item.desc}</p>
             <p>{item.category}</p>
