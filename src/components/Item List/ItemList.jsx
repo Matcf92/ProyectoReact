@@ -1,4 +1,4 @@
-import "./ItemList.css"
+/**import "./ItemList.css"
 
 const ItemList = ({ productos = [] }) => {
 
@@ -24,25 +24,40 @@ const ItemList = ({ productos = [] }) => {
     )
 }
 
-export default ItemList
+export default ItemList**/
 
 
-//Este me funciona ( me hace bien el mapeo y me muestra el detalle del producto pero no me queda bien los estilos)
-
-/**import Item from "../Item/Item"
+import "./ItemList.css"
+import Item from "../Item/Item"
 
 
 const ItemList = ( {productos = []} ) => {
 
     return (
-        <div className="container my-5">
-            <h2>Productos</h2>
-            <hr/>
-
+        <div className="Container">
             { productos.map((prod) => <Item producto={prod} key={prod.id}/>)}
         </div>
     )
 }
 
 export default ItemList
-**/
+
+/**import "./ItemList.css"
+import Item from "../Item/Item"
+
+const ItemList = ({ productos = [] }) => {
+
+    return (
+
+        <div className="Container">
+            {productos.map((prod) => 
+                <Item producto={prod} key={prod.id}/>
+
+            )}
+
+        </div>
+
+    )
+}
+
+export default ItemList**/
