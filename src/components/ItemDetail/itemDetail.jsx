@@ -1,7 +1,25 @@
-import ItemCount from "../Item Count/ItemCount"
+import { useState } from "react"
+import Counter from "../Counter/Counter"
 import "./ItemDetail.css"
 
 const ItemDetail = ({ item }) => {
+
+    const [cantidad, setCantidad] = useState(1)
+
+    const handleAgregar = () => {
+        const itemToCart = {
+            id: item.id,
+            precio: item.precio,
+            nombre: item.nombre,
+            cantidad
+        }
+
+        console.log(itemToCart)
+        // console.log({
+        //     ...item,
+        //     cantidad
+        // })
+    }
 
     return (
         <div className="cardDetailContainer">
@@ -10,9 +28,17 @@ const ItemDetail = ({ item }) => {
             <p>{item.desc}</p>
             <p>{item.category}</p>
             <h4>{item.precio}</h4>
-            <ItemCount/>
+
+            <Counter
+                max={item.stock}
+                counter={cantidad}
+                setCounter={setCantidad}
+                handleAgregar={handleAgregar}
+            />
+
+
         </div>
-        
+
     )
 }
 

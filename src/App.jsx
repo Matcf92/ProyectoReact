@@ -12,20 +12,20 @@ function App() {
   return (
     <BrowserRouter>
 
-    <Header/>
+      <Header />
 
-  <Routes>
-      <Route path='/' element={ <ItemListContainer/> }/>
-      <Route path='/productos/:categoryId' element={<ItemListContainer/>} />
-      <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
-      <Route path="/nosotros" element={<Nosotros/>}/>
-      <Route path="/contacto" element={<Contacto/>}/> 
-      <Route path='*' element={ <Navigate to="/"/>} />
-    </Routes>
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/productos/:categoryId' element={<ItemListContainer />} />
+        <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path='*' element={<Navigate to="/" />} />
+      </Routes>
 
 
 
-</BrowserRouter>
+    </BrowserRouter>
   );
 }
 

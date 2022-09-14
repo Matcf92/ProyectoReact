@@ -8,7 +8,7 @@ export const stock=[
         categoria:'Play Station 5',
         color:'White',
         imagen:'https://i.imgur.com/seBz5IL.jpg',
-        stock:50,
+        stock:10,
         subTotal:1200.00,
         category: 'PlayStation5'
         },
@@ -22,7 +22,7 @@ export const stock=[
             categoria:'Play Station 5',
             color:'White',
             imagen:'https://i.imgur.com/seBz5IL.jpg',
-            stock:70,
+            stock:10,
             subTotal:1300.00,
             category: 'PlayStation5'
             },
@@ -36,7 +36,7 @@ export const stock=[
             categoria:'Xbox',
             color:'Black',
             imagen:'https://i.imgur.com/HzdZuON.jpg',
-            stock:100,
+            stock:10,
             subTotal:1250.00,
             category: 'Xbox'
             },
@@ -50,7 +50,7 @@ export const stock=[
                 categoria:'Xbox',
                 color:'White',
                 imagen:'https://i.imgur.com/lTXoCmp.jpg',
-                stock:20,
+                stock:10,
                 subTotal:900.00,
                 category: 'Xbox'
                 },
@@ -64,7 +64,7 @@ export const stock=[
                     categoria:'Nintendo',
                     color:'Neon - White',
                     imagen:'https://i.imgur.com/R4C7Ojl.jpg',
-                    stock:120,
+                    stock:10,
                     subTotal:600.00,
                     category: 'Nintendo'
                     },
@@ -77,7 +77,7 @@ export const stock=[
                         categoria:'Nintendo',
                         color:'Neon',
                         imagen:'https://i.imgur.com/e8Fszd7.jpg',
-                        stock:50,
+                        stock:10,
                         subTotal:60.00,
                         category: 'Nintendo'
                         }
