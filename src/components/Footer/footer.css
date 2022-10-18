@@ -1,0 +1,12 @@
+.bg-footer {
+    background-color: rgba(52, 180, 240, 0.18);
+}
+
+.footer-container {
+    width: auto;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,13 +1,13 @@
 .bg-header {
-    background-color: grey;
+    background-color: rgba(52, 180, 240, 0.18);
 }
 
 .header-container {
-    max-width: 900px;
-    margin: 0 auto;
+    width: auto;
+    margin: auto;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .header-navbar {
-    min-width: 400px;
+    min-width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,5 +29,9 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
+    color: black;
+}
+
+.header-user {
     color: black;
 }

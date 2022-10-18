@@ -6,6 +6,7 @@ import { Header } from '../components/Header/header';
 import Cart from '../components/Cart/Cart';
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Checkout from '../components/Checkout/Checkout';
+import Footer from '../components/Footer/footer';
 
 
 const PrivateRoutes = () => {
@@ -30,6 +31,7 @@ const PrivateRoutes = () => {
                     : null
                 } */}
             </Routes>
+            <Footer/>
         </>
     )
 }

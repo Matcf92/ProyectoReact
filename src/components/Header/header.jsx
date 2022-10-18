@@ -5,7 +5,7 @@ import './header.css'
 
 export const Header = () => {
 
-    const {user, logout} = useLoginContext()
+    const { user, logout } = useLoginContext()
 
     return (
         <header className="bg-header">
@@ -20,11 +20,11 @@ export const Header = () => {
                     <Link to='/nosotros' className="header-navlink">Nosotros</Link>
                     <Link to='/contacto' className="header-navlink">Contacto</Link>
                 </nav>
-                <CartWidget/>
-            </div>
-            <div className='header-user'>
-                <small>Bienvenido: {user.user}</small>
-                <button onClick={logout} className='btn btn-outline-danger'>Logout</button>
+                <CartWidget />
+                <div className='header-user'>
+                    <small>Bienvenido: {user.user}</small>
+                    <button onClick={logout} className='btn btn-outline-danger'>Logout</button>
+                </div>
             </div>
         </header>
     )
